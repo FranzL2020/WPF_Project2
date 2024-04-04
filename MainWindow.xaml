@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="First application created from Aleksey Sobol" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button1"  Width="100" Height="30" Content="Кнопка" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="buttonOne"  Width="150" Height="45" Content="Назад" HorizontalAlignment="Left" Background="Azure" FontFamily="Verdana">
+            <Button.ToolTip>
+                <ToolTip>
+                    Кликните для возврата на предыдущую страницу
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Grid>
+            <TextBlock Text=" Developer : Aleksey Sobol ISIP-1623" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="Black">
+        </TextBlock>
+    </Grid>
     </Grid>
 </Window>
